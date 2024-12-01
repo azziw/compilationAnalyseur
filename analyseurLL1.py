@@ -9,12 +9,7 @@ def analyseur_LL1():
     if(expression[-1] != '$'):
         print('il manque un $ à la fin de votre chaine veuillez réessayer')
         return
-    
-    for i in range(len(expression)):
-        if isinstance(expression[i], int):
-            expression[i] = "int"
-        if isinstance(expression[i], float):
-            expression[i] = "float"
+
 
     #On initialise la pile
     pile = ['$'] 
